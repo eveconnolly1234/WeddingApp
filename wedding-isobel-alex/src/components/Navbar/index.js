@@ -16,7 +16,7 @@ const Navbar = () => {
       <Nav>
   
         <NavBarContainer>
-          <NavLogo to='/'>Isobel and Alex's Wedding Yupp</NavLogo>
+          <NavLogo to='/'>Isobel and Alex's Wedding</NavLogo>
           <MobileIcon>
             <FaBars />
           </MobileIcon>
@@ -30,6 +30,7 @@ const Navbar = () => {
               <NavItem>
               <NavLinks to="reservation">Reservations</NavLinks>
             </NavItem>
+
           </NavMenu>
 
  </NavBarContainer>
