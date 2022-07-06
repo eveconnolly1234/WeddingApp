@@ -10,25 +10,25 @@ import {
   NavLinks
 } from './NavbarElements';
   
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
   
         <NavBarContainer>
           <NavLogo to='/'>Isobel and Alex's Wedding</NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
+              <NavLinks to="about" onClick={toggle}>About</NavLinks>
              </NavItem>
              <NavItem>
-              <NavLinks to="contact">Contact</NavLinks>
+              <NavLinks to="contact" onClick={toggle}>Contact</NavLinks>
               </NavItem>
               <NavItem>
-              <NavLinks to="reservation">Reservations</NavLinks>
+              <NavLinks to="reservation" onClick={toggle}>Reservations</NavLinks>
             </NavItem>
 
           </NavMenu>

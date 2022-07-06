@@ -1,18 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Navbar from "../components/Navbar";
+import Sidebar from '../components/Sidebar';
+import HeroSection from '../components/HeroSection';
+
+
+const Home = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
   
-const home = () => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'Right',
-        alignItems: 'Right',
-        height: '100vh'
-      }}
-    >
-      <h1>Welcome Home</h1>
-    </div>
-  );
-};
+    <>
+    <Sidebar isOpen={isOpen} toggle={toggle}/>
+    <Navbar toggle={toggle}/>
+    <HeroSection />
+    </>
+  )
+}
   
-export default home;
+export default Home;
