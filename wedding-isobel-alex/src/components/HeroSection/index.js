@@ -18,11 +18,14 @@ const HeroSection = ()=> {
             </HeroBG>
             <HeroContent>
                 <HeroH1>
-                    Isobel and Alex's Wedding
+                    Isobel & Alex
                 </HeroH1>
-                <HeroP>RSVP today!</HeroP>
+                <HeroP>28th May 2023</HeroP>
                 <HeroBtnWrapper>
-                    <Button to='reservation' onMouseEnter={onHover} onMouseExit={onHover}>Reserve your Accom {hover ? <ArrowForward />:<ArrowRight/>}</Button>
+                    <Button to='reservation' 
+                    onMouseEnter={onHover} 
+                    primary='true' dark='true'>Reserve your Accom {hover ? <ArrowForward />:<ArrowRight />}
+                    </Button>
                 </HeroBtnWrapper>
 
             </HeroContent>

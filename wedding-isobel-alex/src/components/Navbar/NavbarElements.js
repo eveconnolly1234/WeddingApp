@@ -10,9 +10,10 @@ export const Nav = styled.nav`
   align-items: center;
   font-size: 1rem;
   position: sticky;
-  top:0
+  top:0;
   padding: 0.2rem calc((100vw - 1000px) / 2);
   z-index: 10;
+
 @media screen and (max-width:960px){
   transition: 0.8s all ease;
 }
@@ -33,7 +34,7 @@ export const NavLogo=styled(LinkR)`
 color: #769293;
 justify-self: flex-start;
 cursor: pointer;
-font-size: 1.9rem;
+font-size: 1.2rem;
 display: flex;
 align-items: center;
 margin-left:24px;
@@ -89,7 +90,7 @@ export const NavLinks=styled(LinkS)`
   display: flex;
 
   &.active{
-    border-bottom:3px solid #01bf71;
+    border-bottom:5px solid #769293;
   }
   &:hover{
     color:#0B3545;}

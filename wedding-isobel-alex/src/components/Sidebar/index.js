@@ -14,14 +14,14 @@ const Sidebar =({isOpen, toggle})=>{
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="about" onClick={toggle}>
+                    <SidebarLink to='about' onClick={toggle}>
                         About
                     </SidebarLink>
-                    <SidebarLink to="contact" onClick={toggle}>
-                        Contact
+                    <SidebarLink to='venue' onClick={toggle}>
+                        Venue
                     </SidebarLink>
-                    <SidebarLink to="reservation" onClick={toggle}>
-                        Reservations
+                    <SidebarLink to='contact' onClick={toggle}>
+                        Contact
                     </SidebarLink>
                 </SidebarMenu>  
 
